@@ -25,7 +25,13 @@
       <label class="map-form__title" for="input-species">
         ¿Qué especie?
       </label>
-      <select name="" id=""></select>
+      <select class="map-form__input map-form__input--select" name="species" id="input-species">
+        @foreach ($species as $item)
+          <option value="{{ $item['id'] }}">
+            {{ $item['nombre_cientifico'] }}
+          </option>
+        @endforeach
+      </select>
     </div>
 
     <div class="map-form__group">
