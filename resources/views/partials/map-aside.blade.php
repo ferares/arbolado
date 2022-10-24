@@ -83,7 +83,7 @@
       </div>
     </div>
 
-    <button type="submit" class="btn btn--primary">
+    <button type="submit" class="btn btn--primary map-form__submit">
       Buscar
     </button>
   </form>

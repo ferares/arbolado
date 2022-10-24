@@ -1,0 +1,29 @@
+.template-map {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.template-map #main {
+  display: grid;
+  flex: 1;
+  grid-template-columns: 0.25fr 0.75fr;
+}
+
+.map-aside {
+  padding: 1rem;
+}
+
+.map-form__title {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 1.25rem;
+}
+
+.map-form__label {
+  font-size: 0.875rem;
+}
+
+.map-form__submit {
+  width: 100%;
+}

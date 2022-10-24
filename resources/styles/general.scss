@@ -1,3 +1,13 @@
+body {
+  color: $color-grey-dark;
+  font-family: $font-family;
+}
+
+h1,
+h2 {
+  font-weight: 400;
+}
+
 .visually-hidden,
 .visually-hidden-focusable:not(:focus):not(:focus-within) {
   position: absolute;

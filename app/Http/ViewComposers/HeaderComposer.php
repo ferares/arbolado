@@ -20,17 +20,17 @@ class HeaderComposer
             [
                 'label' => 'Sobre el mapa',
                 'url' => '',
-                'icon' => '',
+                'icon' => '/assets/imgs/icons/help.svg',
             ],
             [
                 'label' => 'Donaciones',
                 'url' => '',
-                'icon' => '',
+                'icon' => '/assets/imgs/icons/coffe.svg',
             ],
             [
                 'label' => 'Seguinos',
                 'url' => '',
-                'icon' => '',
+                'icon' => '/assets/imgs/icons/heart.svg',
             ],
         ];
     }
