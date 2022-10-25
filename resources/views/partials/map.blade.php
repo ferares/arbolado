@@ -1,1 +1,1 @@
-[MAP HERE]
+<div id="map" class="map-container"></div>

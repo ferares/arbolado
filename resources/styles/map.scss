@@ -1,3 +1,7 @@
+// Leaflet
+@import 'leaflet/dist/leaflet.css';
+@import 'leaflet.markercluster/dist/MarkerCluster.Default.css';
+
 .template-map {
   display: flex;
   flex-direction: column;
@@ -7,7 +11,7 @@
 .template-map #main {
   display: grid;
   flex: 1;
-  grid-template-columns: 0.25fr 0.75fr;
+  grid-template-columns: 0.25fr auto;
 }
 
 .map-aside {
@@ -26,4 +30,11 @@
 
 .map-form__submit {
   width: 100%;
+}
+
+.map-container {
+  height: 100%;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
 }
