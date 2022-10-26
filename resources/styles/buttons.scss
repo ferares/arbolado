@@ -8,6 +8,6 @@
 }
 
 .btn--primary {
-  background-color: $color-main;
-  color: $color-white;
+  background-color: var(--color-main);
+  color: var(--color-white);
 }

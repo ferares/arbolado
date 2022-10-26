@@ -1,6 +1,6 @@
 body {
-  color: $color-grey-dark;
-  font-family: $font-family;
+  color: var(--color-grey-dark);
+  font-family: var(--font-family);
 }
 
 h1,
