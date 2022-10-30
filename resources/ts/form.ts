@@ -26,7 +26,7 @@ export default class ArboladoForm {
 
   private handleSetMarker(latlng: LatLng): void {
     this.markerInput.checked = true
-    this.latlngInput.value = latlng.toString()
+    this.latlngInput.value = `${latlng.lat} ${latlng.lng}`
   }
 
   private handleMarkerInputChange(): void {
@@ -36,6 +36,11 @@ export default class ArboladoForm {
   private async handleFormSubmit(event: Event): Promise<void> {
     event.preventDefault()
     const data = new FormData(this.form)
+    // If no marker is set don't send coordinates nor radio
+    if (!this.markerInput.checked) {
+      data.delete('user_latlng')
+      data.delete('radio')
+    }
     try {
       const trees = await window.Arbolado.fetchJson('/search', 'post', data) as Array<Tree>
       this.map.displayTrees(trees)

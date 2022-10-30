@@ -28,7 +28,7 @@
       <label class="map-form__title" for="input-species">
         ¿Qué especie?
       </label>
-      <arbolado-species-input data-options="{{ $species }}">
+      <arbolado-species-input name="especie_id" data-options="{{ $species }}">
       </arbolado-species-input>
     </div>
 
@@ -37,7 +37,7 @@
         Sabores
       </h2>
       <div class="map-form__option-group">
-        <input type="checkbox" class="map-form__input map-form__input--checkbox" id="input-flavors" name="flavors">
+        <input type="checkbox" class="map-form__input map-form__input--checkbox" id="input-flavors" name="user_sabores">
         <label class="map-form__label" for="input-flavors">
           Frutales y medicinales
         </label>
