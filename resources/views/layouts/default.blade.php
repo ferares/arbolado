@@ -9,5 +9,6 @@
     <main id="main">
       @yield('content')
     </main>
+    @include('includes.loader')
   </body>
 </html>

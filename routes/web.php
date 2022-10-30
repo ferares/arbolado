@@ -16,3 +16,5 @@ use App\Http\Controllers\MapController;
 */
 
 Route::get('/', [MapController::class, 'view'])->name('map');
+Route::post('/search', [MapController::class, 'search'])->name('search');
+Route::get('/tree/{id}', [MapController::class, 'tree'])->name('tree');

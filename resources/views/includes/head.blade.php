@@ -25,5 +25,7 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="apple-touch-icon" href="/assets/icons/icon-192x192.png">
 
-  @vite(['resources/js/app.ts', 'resources/styles/app.scss'])
+  @yield('view-scripts')
+
+  @vite(['resources/ts/app.ts', 'resources/styles/app.scss'])
 </head>

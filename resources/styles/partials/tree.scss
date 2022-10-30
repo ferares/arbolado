@@ -1,0 +1,12 @@
+.tree-wrapper {
+  background-color: var(--color-white);
+  height: 100%;
+  overflow: auto;
+  position: fixed;
+  z-index: 10;
+}
+
+.tree-wrapper__link {
+  font-size: 1.25rem;
+  min-width: 3rem;
+}

@@ -18,14 +18,27 @@
   padding: 1rem;
 }
 
+.map-form {
+  margin-bottom: 2.1875rem;
+}
+
+.map-form__group {
+  margin-bottom: 2.1875rem;
+}
+
 .map-form__title {
+  display: block;
   font-size: 1rem;
   font-weight: 500;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.625rem;
 }
 
 .map-form__label {
   font-size: 0.875rem;
+}
+
+.map-form__options {
+  display: flex;
 }
 
 .map-form__submit {
@@ -37,4 +50,23 @@
   min-height: 100vh;
   position: relative;
   z-index: 1;
+}
+
+.collaborations__intro {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  max-width: 18rem;
+  text-align: center;
+}
+
+.collaborations__logos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.collaborations__logo {
+  display: block;
+  margin: 0 auto;
+  max-width: 9rem;
 }

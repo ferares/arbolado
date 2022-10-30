@@ -1,13 +1,13 @@
 {
   "compilerOptions": {
     "isolatedModules": true,
-    "target": "es5",
+    "target": "es6",
     "module": "ES2022",
     "moduleResolution": "node",
     "baseUrl": "./",
     "strict": true,
     "skipLibCheck": true,
-    "noImplicitAny": false
+    "noImplicitAny": true
   },
-  "include": ["resources/js/**/*"]
+  "include": ["resources/ts/**/*"]
 }

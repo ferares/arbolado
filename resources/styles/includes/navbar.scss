@@ -13,7 +13,7 @@
 }
 
 .main-navbar__title {
-  color: $color-main;
+  color: var(--color-main);
   font-size: 1.25rem;
 }
 
@@ -27,7 +27,7 @@
 
 .main-navbar__link {
   align-items: center;
-  color: $color-grey-dark;
+  color: var(--color-grey-dark);
   column-gap: 0.25rem;
   display: grid;
   font-size: 0.875rem;
