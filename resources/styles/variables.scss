@@ -1,3 +1,5 @@
+$color-main: #449f83;
+
 :root {
   --font-family: 'Raleway', sans-serif;
 
@@ -6,5 +8,5 @@
   --color-grey-light: #f8f8f8;
   --color-white: #fff;
 
-  --color-main:  #449f83;
+  --color-main:  $color-main;
 }

@@ -1,8 +1,15 @@
+// Polyfill for attachInternals method on Safari https://caniuse.com/mdn-api_htmlelement_attachinternals
+import 'https://cdn.skypack.dev/element-internals-polyfill'
+
 import ArboladoMap from './map'
 import ArboladoForm from './form'
 import ArboladoTreeData from './tree-data'
+
+// Components
+import './components/drawer'
 import './components/species-input'
 
+// Custom window properties declaration
 declare global {
   interface Window {
     env: any,
@@ -15,6 +22,7 @@ declare global {
   }
 }
 
+// Arbolado object init
 window.Arbolado = {
   async fetch(url: string, method: string, data?: any): Promise<any> {
     window.Arbolado.setLoading(true)
@@ -40,7 +48,10 @@ window.Arbolado = {
   },
 }
 
+// Map init
 const map = new ArboladoMap()
+// Form init
 new ArboladoForm(map)
+// Tree drawer init
 new ArboladoTreeData(map)
 

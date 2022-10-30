@@ -8,10 +8,11 @@
   height: 100vh;
 }
 
-.template-map #main {
+.template-map .main {
   display: grid;
   flex: 1;
   grid-template-columns: 0.25fr auto;
+  grid-template-rows: 1fr;
 }
 
 .map-aside {
@@ -46,8 +47,6 @@
 }
 
 .map-container {
-  height: 100%;
-  min-height: 100vh;
   position: relative;
   z-index: 1;
 }

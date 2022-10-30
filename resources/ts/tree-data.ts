@@ -1,40 +1,25 @@
+import Drawer from './components/drawer'
 import ArboladoMap from './map'
 
 export default class ArboladoTreeData {
   map: ArboladoMap
-  treeDataElement: HTMLElement
-  treeCloseElement: HTMLButtonElement
+  drawer: Drawer
   
   constructor(map: ArboladoMap) {
     this.map = map
-    this.treeDataElement = document.querySelector('[js-tree-data]') as HTMLElement
-    this.treeCloseElement = document.querySelector('[js-tree-close]') as HTMLButtonElement
+    this.drawer = document.querySelector('[js-tree-data]') as Drawer
     
     this.map.addEventListener('selectTree', this.displayTree.bind(this))
-    this.treeCloseElement.addEventListener('click', this.closeTree.bind(this))
   }
 
   private async displayTree(id: number): Promise<void> {
     try {
       const treeData = await window.Arbolado.fetchText(`/tree/${id}`, 'get')
       if (!treeData) return
-      this.treeDataElement.innerHTML = treeData
-      this.openTree()
+      this.drawer.setContent(treeData)
+      this.drawer.open()
     } catch (error) {
       console.error(error)
     }
-  }
-  
-  private closeTree(): void {
-    this.toggleTree(false)
-  }
-  
-  private openTree(): void {
-    this.toggleTree(true)
-  }
-
-  private toggleTree(show: boolean): void {
-    if (show) this.treeDataElement.classList.add('show')
-    else this.treeDataElement.classList.remove('show')
   }
 }

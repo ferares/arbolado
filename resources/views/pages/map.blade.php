@@ -12,4 +12,5 @@
   @include('partials.map-aside')
   @include('partials.map')
   @include('partials.tree')
+  @include('components.drawer')
 @stop

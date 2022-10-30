@@ -6,7 +6,7 @@
       @lang('Saltar al contenido')
     </a>
     @include('includes.header')
-    <main id="main">
+    <main id="main" class="main">
       @yield('content')
     </main>
     @include('includes.loader')
